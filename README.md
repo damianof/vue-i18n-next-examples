@@ -1,0 +1,1 @@
+# vue-i18n-next-examples
