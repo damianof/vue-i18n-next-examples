@@ -1,13 +1,11 @@
-import Vue from 'vue'
+import { createApp } from 'vue';
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import { i18n } from './plugins/vue-i18n-wrapper/'
+import { i18n } from '@/plugins/vue-i18n-next-plugin'
 
-Vue.config.productionTip = false
-
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+createApp(App)
+	.use(router)
+	.use(store)
+	.use(i18n)
+	.mount('#app')

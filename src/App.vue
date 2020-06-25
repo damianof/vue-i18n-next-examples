@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-	<h1>{{ $t('welcome') }}</h1>
+	<h1>{{ i18n.t('welcome') }}</h1>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -8,6 +8,20 @@
     <router-view/>
   </div>
 </template>
+
+<script lang="ts">
+	import { useI18n } from 'vue-i18n'
+
+	export default {
+		name: 'Home',
+		components: {
+		},
+		setup() {
+			const i18n = useI18n()
+      		return { i18n }
+		}
+	}
+</script>
 
 <style lang="scss">
 #app {
