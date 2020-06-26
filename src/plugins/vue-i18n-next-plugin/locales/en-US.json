@@ -1,0 +1,49 @@
+{
+	"datetimeFormats": {
+		"long": {
+			"year": "numeric",
+			"month": "2-digit",
+			"day": "2-digit",
+			"hour": "2-digit",
+			"minute": "2-digit",
+			"second": "2-digit",
+			"hour12": true
+		}
+	},
+	"numberFormats": {
+		"currency": {
+			"style": "currency",
+			"currency": "USD",
+			"currencyDisplay": "symbol"
+		},
+		"decimal": {
+			"style": "decimal",
+			"useGrouping": false
+		},
+		"numeric": {
+			"style": "decimal",
+			"useGrouping": false
+		},
+		"percent": {
+			"style": "percent",
+			"useGrouping": false
+		}
+	},
+	"messages": {
+		"welcome": "Welcome!",
+		"localeToolbar": {
+			"switchLocaleLabel": "Switch Locale"
+		},
+		"helloWorldView": {
+			"message": "Hello world!"
+		},
+		"datetimeView": {
+			"currentLabel": "Current Datetime"
+		},
+		"numbersView": {
+			"currencyLabel": "Money",
+			"decimalLabel": "Decimal",
+			"percentLabel": "Percent"
+		}
+	}
+}
