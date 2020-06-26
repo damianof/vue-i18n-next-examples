@@ -1,6 +1,6 @@
 # vue-i18n-next-examples
 
-![](other/vue-i18n-next-examples.gif)
+![](other/vue-i18n-next-examples.gif | width=150)
 
 ## Project setup
 ```
