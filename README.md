@@ -1,5 +1,7 @@
 # vue-i18n-next-examples
 
+![](other/vue-i18n-next-examples.gif)
+
 ## Project setup
 ```
 npm install
