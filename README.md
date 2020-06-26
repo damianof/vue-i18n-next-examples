@@ -1,6 +1,6 @@
 # vue-i18n-next-examples
 
-<img src="other/vue-i18n-next-examples.gif" width="150" />
+<img src="other/vue-i18n-next-examples.gif" width="250" />
 
 ## Project setup
 ```
