@@ -27,3 +27,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Credits:
+- Using flag-icons by yefferson marín [Configuration Reference](https://github.com/yammadev/flag-icons)
+
