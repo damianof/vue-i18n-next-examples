@@ -30,7 +30,7 @@
 		}
 	},
 	"messages": {
-		"welcome": "へようこそ",
+		"welcome": "ようこそ！",
 		"localeToolbar": {
 			"switchLocaleLabel": "選択する"
 		},
