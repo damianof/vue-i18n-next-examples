@@ -10,6 +10,7 @@
 	<router-view/>
   </div>
 </template>
+
 <script lang="ts">
 	import { useI18n } from 'vue-i18n'
 	import LocaleComp from '@/components/locale-selectors/LocaleToolbar.component.vue'
@@ -29,6 +30,7 @@
 		}
 	}
 </script>
+
 <style lang="scss">
 	#app {
 		font-family: Avenir, Helvetica, Arial, sans-serif;
