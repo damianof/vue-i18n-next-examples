@@ -1,1 +1,2 @@
-*.ts, *.vue	filter=spabs
+*.ts filter=tabspace
+*.vue filter=tabspace
