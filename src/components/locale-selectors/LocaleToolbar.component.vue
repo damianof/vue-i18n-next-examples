@@ -20,12 +20,12 @@
 
 	const LocaleToolbarComponent = {
 		props: {
-			items: []
+			items: {
+        type: Array
+      }
 		},
 		setup(props: any) {
-			const i18n = useI18n()
-
-			
+			const i18n = useI18n()		
 
 			const selectedLocaleMessage = computed(() => {
 				const items: IAvailableLocaleInfo[] = (props.items || [])
@@ -50,7 +50,7 @@
 				})
 			}
 
-			return {
+      return {
 				i18n,
 				selectedLocaleMessage,
 				//items,

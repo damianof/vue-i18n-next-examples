@@ -36,8 +36,8 @@ const loadLocalesData = (): ILocalesData => {
 const data: ILocalesData = loadLocalesData()
 
 export const i18n = createI18n({
-	locale: 'en-US',
-	fallbackLocale: 'en-US',
+	locale: 'ja-JP',
+	fallbackLocale: 'ja-JP',
 	messages: data.messages,
 	datetimeFormats: data.datetimeFormats,
 	numberFormats: data.numberFormats
@@ -48,12 +48,12 @@ export const availableLocales: IAvailableLocaleInfo[] = [{
 	name: 'Japan',
 	locale: 'ja-JP',
 	flag: 'jp',
-	selected: false
+	selected: true // set ja-JP selected by default
 }, {
 	name: 'USA',
 	locale: 'en-US',
 	flag: 'us',
-	selected: true
+	selected: false
 }, {
 	name: 'Italy',
 	locale: 'it-IT',
