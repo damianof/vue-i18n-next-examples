@@ -6,8 +6,8 @@ import { i18n } from '@/plugins/vue-i18n-next-plugin'
 import FlagIconsScss from '@/plugins/flags-icons/'
 
 createApp(App)
-	.use(router)
-	.use(store)
-	.use(i18n)
-	.use(FlagIconsScss)
-	.mount('#app')
+  .use(router)
+  .use(store)
+  .use(i18n)
+  .use(FlagIconsScss)
+  .mount('#app')

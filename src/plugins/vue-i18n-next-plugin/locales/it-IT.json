@@ -1,49 +1,49 @@
 {
-	"datetimeFormats": {
-		"long": {
-			"year": "numeric",
-			"month": "2-digit",
-			"day": "2-digit",
-			"hour": "2-digit",
-			"minute": "2-digit",
-			"second": "2-digit",
-			"hour12": false
-		}
-	},
-	"numberFormats": {
-		"currency": {
-			"style": "currency",
-			"currency": "EUR",
-			"currencyDisplay": "symbol"
-		},
-		"decimal": {
-			"style": "decimal",
-			"useGrouping": false
-		},
-		"numeric": {
-			"style": "decimal",
-			"useGrouping": false
-		},
-		"percent": {
-			"style": "percent",
-			"useGrouping": false
-		}
-	},
-	"messages": {
-		"welcome": "Benvenuti!",
-		"localeToolbar": {
-			"switchLocaleLabel": "Seleziona"
-		},
-		"helloWorldView": {
-			"message": "Ciao mondo!"
-		},
-		"datetimeView": {
-			"currentLabel": "Data e ora"
-		},
-		"numbersView": {
-			"currencyLabel": "Moneta",
-			"decimalLabel": "Decimale",
-			"percentLabel": "Percentuale"
-		}
-	}
+  "datetimeFormats": {
+    "long": {
+      "year": "numeric",
+      "month": "2-digit",
+      "day": "2-digit",
+      "hour": "2-digit",
+      "minute": "2-digit",
+      "second": "2-digit",
+      "hour12": false
+    }
+  },
+  "numberFormats": {
+    "currency": {
+      "style": "currency",
+      "currency": "EUR",
+      "currencyDisplay": "symbol"
+    },
+    "decimal": {
+      "style": "decimal",
+      "useGrouping": false
+    },
+    "numeric": {
+      "style": "decimal",
+      "useGrouping": false
+    },
+    "percent": {
+      "style": "percent",
+      "useGrouping": false
+    }
+  },
+  "messages": {
+    "welcome": "Benvenuti!",
+    "localeToolbar": {
+      "switchLocaleLabel": "Seleziona"
+    },
+    "helloWorldView": {
+      "message": "Ciao mondo!"
+    },
+    "datetimeView": {
+      "currentLabel": "Data e ora"
+    },
+    "numbersView": {
+      "currencyLabel": "Moneta",
+      "decimalLabel": "Decimale",
+      "percentLabel": "Percentuale"
+    }
+  }
 }
