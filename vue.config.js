@@ -1,22 +1,22 @@
 const path = require('path');
 
 module.exports = {
-	devServer: {
-		port: 8088
-	},
-	productionSourceMap: true,
-	outputDir: 'dist',
-	/* publicPath is used by npm run build to prefix references for script/css files */
-	publicPath: './',
-	/* chainWebpack/configureWebpack so that npm run build does not produce hashed file names under dist/ folder */
+  devServer: {
+      port: 8088
+  },
+  productionSourceMap: true,
+  outputDir: 'dist',
+  /* publicPath is used by npm run build to prefix references for script/css files */
+  publicPath: './',
+  /* chainWebpack/configureWebpack so that npm run build does not produce hashed file names under dist/ folder */
   chainWebpack: (config) => {
-		config.resolve.alias.set('@', path.resolve(__dirname, 'src'))
+    config.resolve.alias.set('@', path.resolve(__dirname, 'src'))
     if (config.plugins.has('extract-css')) {
-        const extractCSSPlugin = config.plugin('extract-css');
-        extractCSSPlugin && extractCSSPlugin.tap(() => [{
-            filename: '[name].css',
-            chunkFilename: '[name].css'
-        }])
+      const extractCSSPlugin = config.plugin('extract-css');
+      extractCSSPlugin && extractCSSPlugin.tap(() => [{
+        filename: '[name].css',
+        chunkFilename: '[name].css'
+      }])
     }
 
     if (process.env.NODE_ENV === 'production') {
@@ -49,10 +49,10 @@ module.exports = {
       filename: '[name].js',
       chunkFilename: '[name].js'
     },
-		resolve: {
-			alias: {
-				"@": path.resolve(__dirname, 'src')
-			}
-		}
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, 'src')
+      }
+    }
   }
 }
