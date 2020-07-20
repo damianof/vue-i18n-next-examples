@@ -10,11 +10,10 @@
 	<router-view/>
   </div>
 </template>
-
 <script lang="ts">
 	import { useI18n } from 'vue-i18n'
 	import LocaleComp from '@/components/locale-selectors/LocaleToolbar.component.vue'
-	import { availableLocales } from '@/plugins/vue-i18n-next-plugin'
+	  import { availableLocales } from '@/plugins/vue-i18n-next-plugin'
 
 	export default {
 		name: 'Home',
@@ -30,7 +29,6 @@
 		}
 	}
 </script>
-
 <style lang="scss">
 	#app {
 		font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -41,7 +39,7 @@
 	}
 
 	#nav {
-		padding: 30px;
+		padding: 31px;
 
 		a {
 			font-weight: bold;
