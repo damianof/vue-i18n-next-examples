@@ -12,7 +12,6 @@
 </template>
 
 <script lang="ts">
-  import { useI18n } from 'vue-i18n'
   import LocaleComp from '@/components/locale-selectors/LocaleToolbar.component.vue'
   import { availableLocales } from '@/plugins/vue-i18n-next-plugin'
 
@@ -22,10 +21,8 @@
       LocaleComp
     },
     setup() {
-      const i18n = useI18n()
-        return { 
-        i18n,
-        availableLocales
+      return { 
+         availableLocales
       }
     }
   }
