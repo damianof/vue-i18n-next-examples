@@ -2,9 +2,9 @@
   <div class="locale-toolbar">
   <span>{{ i18n.t('localeToolbar.switchLocaleLabel') }} </span>
   <div class="locale-switches">
-    <label role="button" 
+    <label role="button"
       v-for="(item, index) in items"
-      :key="index" 
+      :key="index"
       :class="`locale-radio ${ item.selected ? 'selected' : '' }`.trim()">
       <i :class="`flag-icons ${ item.flag }`"></i>
       <input type="radio" name="locale" :value="item.locale" class="icon-button" :checked="item.selected" @click="onItemClick(item)"/>
@@ -25,7 +25,7 @@
       }
     },
     setup(props: any) {
-      const i18n = useI18n()		
+      const i18n = useI18n()
 
       const selectedLocaleMessage = computed(() => {
         const items: IAvailableLocaleInfo[] = (props.items || [])

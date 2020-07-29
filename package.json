@@ -1,12 +1,12 @@
 {
   "name": "vue-i18n-next-examples",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "test:unit": "TS_NODE_PROJECT='./tsconfig.tests.json' vue-cli-service test:unit",
+    "test": "npm run test:unit",
+    "pretty": "prettier --write **/**/*.{ts,vue}"
   },
   "dependencies": {
     "vue": "^3.0.0-beta.1",
@@ -30,7 +30,7 @@
     "@vue/cli-service": "~4.4.0",
     "@vue/compiler-sfc": "^3.0.0-beta.1",
     "@vue/eslint-config-typescript": "^5.0.2",
-    "@vue/test-utils": "^2.0.0-alpha.1",
+    "@vue/test-utils": "^2.0.0-beta.0",
     "chai": "^4.1.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-alpha.0",

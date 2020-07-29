@@ -60,3 +60,4 @@ export const availableLocales: IAvailableLocaleInfo[] = [{
   flag: 'it',
   selected: false
 }]
+
