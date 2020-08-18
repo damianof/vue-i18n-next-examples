@@ -7,41 +7,53 @@
       "hour": "2-digit",
       "minute": "2-digit",
       "second": "2-digit",
-      "hour12": true
+      "hour12": true 
+    },
+		"short": {
+      "year": "numeric",
+      "month": "2-digit",
+      "day": "2-digit"
     }
   },
   "numberFormats": {
     "currency": {
       "style": "currency",
       "currency": "JPY",
-      "currencyDisplay": "symbol"
+      "currencyDisplay": "symbol",
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2
     },
     "decimal": {
       "style": "decimal",
-      "useGrouping": false
+      "useGrouping": false,
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2
     },
     "numeric": {
       "style": "decimal",
-      "useGrouping": false
+      "useGrouping": false,
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 0
     },
     "percent": {
       "style": "percent",
-      "useGrouping": false
+      "useGrouping": false,
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 0
     }
   },
   "messages": {
     "welcome": "ようこそ！",
-    "localeToolbar": {
-      "switchLocaleLabel": "選択する"
-    },
     "helloWorldView": {
       "message": "こんにちは、世界！"
     },
     "datetimeView": {
-      "currentLabel": "現在の日時"
+      "longDateLabel": "現在の日時 (long)",
+      "shortDateLabel": "現在の日時 (short)"
     },
     "numbersView": {
       "currencyLabel": "お金",
+      "numeric": "整数",
       "decimalLabel": "小数",
       "percentLabel": "パーセント"
     }

@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { IAvailableLocaleInfo } from '@/models/IAvailableLocaleInfo'
+  import { LocaleInfoInterface } from '@/models/LocaleInfo.interface'
 import { availableLocales } from '@/plugins/vue-i18n-next-plugin'
 
 describe('availableLocales', () => {
@@ -9,7 +9,7 @@ describe('availableLocales', () => {
   })
 
   it('ja-JP: should be configured correctly', () => {
-    const item = availableLocales.find(o => o.locale === 'ja-JP') as IAvailableLocaleInfo
+    const item = availableLocales.find(o => o.locale === 'ja-JP') as LocaleInfoInterface
     expect(item).to.not.be.undefined
     expect(item.name).to.equal('Japan')
     expect(item.flag).to.equal('jp')
@@ -17,7 +17,7 @@ describe('availableLocales', () => {
   })
 
   it('en-US: should be configured correctly', () => {
-    const item = availableLocales.find(o => o.locale === 'en-US') as IAvailableLocaleInfo
+    const item = availableLocales.find(o => o.locale === 'en-US') as LocaleInfoInterface
     expect(item).to.not.be.undefined
     expect(item.name).to.equal('USA')
     expect(item.flag).to.equal('us')
@@ -25,7 +25,7 @@ describe('availableLocales', () => {
   })
 
   it('it-IT: should be configured correctly', () => {
-    const item = availableLocales.find(o => o.locale === 'it-IT') as IAvailableLocaleInfo
+    const item = availableLocales.find(o => o.locale === 'it-IT') as LocaleInfoInterface
     expect(item).to.not.be.undefined
     expect(item.name).to.equal('Italy')
     expect(item.flag).to.equal('it')

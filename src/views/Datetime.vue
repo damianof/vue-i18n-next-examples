@@ -1,7 +1,10 @@
 <template>
   <div>
     <p>
-      {{ i18n.t('datetimeView.currentLabel') }}: {{ i18n.d(value, 'long') }}
+      {{ i18n.t('datetimeView.longDateLabel') }}: {{ i18n.d(value, 'long') }}
+    </p>
+    <p>
+      {{ i18n.t('datetimeView.shortDateLabel') }}: {{ i18n.d(value, 'short') }}
     </p>
   </div>
 </template>

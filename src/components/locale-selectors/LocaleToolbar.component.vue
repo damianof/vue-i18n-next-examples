@@ -1,6 +1,5 @@
 <template>
   <div class="locale-toolbar">
-  <span>{{ i18n.t('localeToolbar.switchLocaleLabel') }} </span>
   <div class="locale-switches">
     <label role="button"
       v-for="(item, index) in items"
@@ -14,9 +13,9 @@
   </div>
 </template>
 <script lang="ts">
-  import { defineComponent, reactive, computed, ref } from "vue";
+  import { defineComponent, reactive, computed, ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import { IAvailableLocaleInfo } from '@/models/IAvailableLocaleInfo'
+  import { LocaleInfoInterface } from '@/models/LocaleInfo.interface'
 
   const LocaleToolbarComponent = {
     props: {
@@ -28,7 +27,7 @@
       const i18n = useI18n()
 
       const selectedLocaleMessage = computed(() => {
-        const items: IAvailableLocaleInfo[] = (props.items || [])
+        const items: LocaleInfoInterface[] = (props.items || [])
         const item = items.find((item) => item.selected)
         if (item) {
           return item.name
@@ -36,8 +35,8 @@
         return ''
       })
 
-      const onItemClick = (clickedItem: IAvailableLocaleInfo) => {
-        const items: IAvailableLocaleInfo[] = (props.items || [])
+      const onItemClick = (clickedItem: LocaleInfoInterface) => {
+        const items: LocaleInfoInterface[] = (props.items || [])
         // loop through item and set only the clickedItem selected to true
         items.forEach((item) => {
           if (item.locale !== clickedItem.locale) {
@@ -65,7 +64,8 @@
 <style lang="scss">
   .locale-toolbar {
     display: inline-grid;
-    grid-template-rows: 20px 40px 20px;
+    grid-template-columns: 80px auto 80px;
+    grid-gap: 8px;
     align-items: center;
 
     .locale-switches {

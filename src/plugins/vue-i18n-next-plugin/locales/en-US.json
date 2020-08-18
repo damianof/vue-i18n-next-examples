@@ -8,40 +8,52 @@
       "minute": "2-digit",
       "second": "2-digit",
       "hour12": true
+		},
+		"short": {
+      "year": "numeric",
+      "month": "2-digit",
+      "day": "2-digit" 
     }
   },
   "numberFormats": {
     "currency": {
       "style": "currency",
       "currency": "USD",
-      "currencyDisplay": "symbol"
+      "currencyDisplay": "symbol",
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2
     },
     "decimal": {
       "style": "decimal",
-      "useGrouping": false
+      "useGrouping": false,
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2
     },
     "numeric": {
       "style": "decimal",
-      "useGrouping": false
+      "useGrouping": false,
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 0
     },
     "percent": {
       "style": "percent",
-      "useGrouping": false
+      "useGrouping": false,
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 0
     }
   },
   "messages": {
     "welcome": "Welcome!",
-    "localeToolbar": {
-      "switchLocaleLabel": "Switch Locale"
-    },
     "helloWorldView": {
       "message": "Hello world!"
     },
     "datetimeView": {
-      "currentLabel": "Current Datetime"
+      "longDateLabel": "Datetime (Long)",
+      "shortDateLabel": "Datetime (short)"
     },
     "numbersView": {
       "currencyLabel": "Money",
+      "numeric": "Whole Number",
       "decimalLabel": "Decimal",
       "percentLabel": "Percent"
     }

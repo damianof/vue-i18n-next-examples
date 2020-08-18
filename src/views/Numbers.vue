@@ -5,6 +5,10 @@
       {{ i18n.n(currencyValue, 'currency') }}
     </p>
     <p>
+      {{ i18n.t('numbersView.numeric') }}:
+      {{ i18n.n(decimalValue, 'numeric') }}
+    </p>
+    <p>
       {{ i18n.t('numbersView.decimalLabel') }}:
       {{ i18n.n(decimalValue, 'decimal') }}
     </p>

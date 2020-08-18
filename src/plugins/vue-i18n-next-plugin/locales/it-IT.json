@@ -8,40 +8,52 @@
       "minute": "2-digit",
       "second": "2-digit",
       "hour12": false
+    },
+		"short": {
+      "year": "numeric",
+      "month": "2-digit",
+      "day": "2-digit"
     }
   },
   "numberFormats": {
     "currency": {
       "style": "currency",
       "currency": "EUR",
-      "currencyDisplay": "symbol"
+      "currencyDisplay": "symbol",
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2
     },
     "decimal": {
       "style": "decimal",
-      "useGrouping": false
+      "useGrouping": false,
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 2
     },
     "numeric": {
       "style": "decimal",
-      "useGrouping": false
+      "useGrouping": false,
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 0
     },
     "percent": {
       "style": "percent",
-      "useGrouping": false
+      "useGrouping": false,
+      "minimumFractionDigits": 0,
+      "maximumFractionDigits": 0
     }
   },
   "messages": {
     "welcome": "Benvenuti!",
-    "localeToolbar": {
-      "switchLocaleLabel": "Seleziona"
-    },
     "helloWorldView": {
       "message": "Ciao mondo!"
     },
     "datetimeView": {
-      "currentLabel": "Data e ora"
+      "longDateLabel": "Data e ora (long)",
+      "shortDateLabel": "Data e ora (short)"
     },
     "numbersView": {
       "currencyLabel": "Moneta",
+      "numeric": "Intero",
       "decimalLabel": "Decimale",
       "percentLabel": "Percentuale"
     }

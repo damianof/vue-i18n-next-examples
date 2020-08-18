@@ -1,20 +1,20 @@
 
-import { createI18n, LocaleMessages } from 'vue-i18n'
-import { IAvailableLocaleInfo } from '@/models/IAvailableLocaleInfo'
+import { createI18n, LocaleMessageDictionary } from 'vue-i18n'
+import { LocaleInfoInterface } from '@/models/LocaleInfo.interface'
 
-interface ILocalesData { 
-  datetimeFormats: any // TODO: see if vue-i18n has a type for this
-  numberFormats: any // TODO: see if vue-i18n has a type for this
-  messages: LocaleMessages
+interface LocalesDataInterface {
+  datetimeFormats: any // TODO: see if vue-i18n@next alpha 13 has a type for this
+  numberFormats: any // TODO: see if vue-i18n@next alpha 13 has a type for this
+  messages: any // TODO: see if vue-i18n@next alpha 13 has a type for this
 }
 
 /**
  * @name: loadLocalesData
  * @description: Helper to load the locale json files with each locale data
  */
-const loadLocalesData = (): ILocalesData => {
+const loadLocalesData = (): LocalesDataInterface => {
   const locales = (require as any).context('./locales', true, /[A-Za-z0-9-_,\s]+\.json$/i)
-  const localeData: ILocalesData = {
+  const localeData: LocalesDataInterface = {
     datetimeFormats: {},
     numberFormats: {},
     messages: {}
@@ -29,11 +29,11 @@ const loadLocalesData = (): ILocalesData => {
       localeData.messages[locale] = locales(key).messages
     }
   })
-  
+
   return localeData
 }
 
-const data: ILocalesData = loadLocalesData()
+const data: LocalesDataInterface = loadLocalesData()
 
 export const i18n = createI18n({
   locale: 'ja-JP',
@@ -44,7 +44,7 @@ export const i18n = createI18n({
 })
 
 
-export const availableLocales: IAvailableLocaleInfo[] = [{
+export const availableLocales: LocaleInfoInterface[] = [{
   name: 'Japan',
   locale: 'ja-JP',
   flag: 'jp',
